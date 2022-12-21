@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Codificação de Mensagens</h1>
+    </header>
+   
+    <main>
+        <div class="container">
+
+            <div class="titulo">   <h2> Escolha o algoritmo </h2> <div> </div>
+
+                    <select name="escolha-cod" id="cod-escolhido"> 
+                        <option value="select" id="opção-selecione" disabled selected>Selecione</option> 
+            
+                        <option value="cifraCesar" id="opção-cifra">Cifra de César</option>
+                        <option value="base.64" id="opção-base">Base64</option>
+                    </select>
+
+                </div>
+
+                <!--  só aparece se for o Cifra -->
+               
+                    <h2>Escolha um número</h2>
+                        <input id="passo" type= "number" min=1 max=26  placeholder="1-25">
+                
+                <div class="form-control">
+                <section class="texto-escondido"> 
+                     <h2>Codificar</h2> 
+                    <input id="inicio"  placeholder="Coloque aqui a sua mensagem">
+                </section>
+                </div>
+                               
+                <div class="radio-button">
+                      <input type="radio" name="radioInput"  id="codificar" value="codificar">
+                      <label for="codificar">Codificar</label>
+                </div>    
+              
+                <div class="radio-button">
+                 <input type="radio" name ="radioInput"  id="decodificar" value="decodificar">
+                  <label for="decodificar">Decodificar</label> 
+                       
+                    </div>
+              
+                 <br>  
+                <div class="form-control">
+                   <button type="submit"  id="btn-codificar">Codificar</button>
+                </div>
+              
+                <div class="form-control">    
+                    <input id="resultado"  placeholder="Seu resultado aparecerá aqui">
+                </div>
+                </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
